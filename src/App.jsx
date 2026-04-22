@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-const API = "http://localhost:8080";
+// const API = "http://localhost:8080";
+const API = import.meta.env.VITE_API_URL || "http://localhost:8080";
 const ACCESS_TOKEN_KEY = "accessToken";
 const REFRESH_TOKEN_KEY = "refreshToken";
 const USER_ID_KEY = "userId";
